@@ -35,11 +35,30 @@
             <option value="UFRA">UFRA</option>
         </select>
 
+        <br/><br/>
+        <label>Postagem*: </label>
+        <textarea name="postagem" rows="5" cols="32"></textarea>
+
+        <!-- HTML 5 -->
+        <fieldset>
+            <legend>Inputs do HTML 5:</legend>
+            <br/><br/>
+            <label>Número: </label>
+            <input type="number" name="numero" required />
+            <br/><br/>
+            <label>E-mail: </label>
+            <input type="email" name="emailCliente" required />
+            <br/><br/>
+            <label>Data: </label>
+            <input type="date" name="dataNascimento" required />
+        </fieldset>
+
         <br/><br/><br/><br/>
         <input type="submit" value="Cadastrar 1" />
         <input type="button" value="Cadastrar 2" />
         <input type="reset" value="Limpar" 
             onclick="return confirm('Deseja realmente apagar?');" />
+
     </form>
 </body>
 </html>
