@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Formulário</title>
+</head>
+<body>
+    <form action="backend.php" method="post">
+        <label>Nome completo: </label>
+        <input type="text" name="nomeCliente" 
+        placeholder="Digite seu nome completo" />
+        <br/><br/>
+        <label>Senha: </label> 
+        <input type="password" name="senha" />
+        <br/><br/>
+        <label>Gênero*: </label> 
+        <input type="radio" name="genero" value="M" /> Masculino
+        <input type="radio" name="genero" value="F" /> Feminino
+        <br/><br/>
+        <label>Conduções*: </label>
+        <input type="checkbox" name="veiculo" value="1" /> Bicicleta 
+        <input type="checkbox" name="veiculo" value="2" /> Carro
+        <input type="checkbox" name="veiculo" value="3" /> Ônibus
+        
+        <br/><br/><br/><br/>
+        <input type="submit" value="Cadastrar 1" />
+        <input type="button" value="Cadastrar 2" />
+        <input type="reset" value="Limpar" 
+            onclick="return confirm('Deseja realmente apagar?');" />
+    </form>
+</body>
+</html>
